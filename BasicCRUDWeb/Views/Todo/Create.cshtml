@@ -1,0 +1,48 @@
+﻿@model Todo
+
+<form method="post" class="was-validated">
+    <div class="row pt-4">
+        <h2 class="text-primary">Create To Do</h2>
+    </div>
+
+    <div class="mb-3">
+        <label for="todoarea" class="form-label mt-4">To Do</label>
+        <textarea asp-for="Dolist" class="form-control" id="todoarea" rows="3" maxlength="500" placeholder="What do you want to do?" required></textarea>
+@*        <div class="invalid-feedback">
+            Please enter a message in the textarea.
+        </div>*@
+    </div>
+
+    <div class="pt-4" style="text-align: center">
+        <label class="form-label mt-4">Priority</label>
+        <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+          <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked="">
+          <label class="btn btn-outline-danger" for="btnradio1">High</label>
+          <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off" checked="">
+          <label class="btn btn-outline-warning" for="btnradio2">Medium</label>
+          <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off" checked="">
+          <label class="btn btn-outline-success" for="btnradio3">Low</label>
+        </div>
+    </div>
+    <div class="pt-5" style="text-align: right">
+        <input type="hidden" name="prio" id="prio" value="false">
+        <button type="submit" onclick="getRadioValue()" class="btn btn-primary" style="width: 150px">CREATE</button>
+    </div>
+    <script>
+        function getRadioValue(){
+            var r1 = document.getElementById("btnradio1").checked;
+            var r2 = document.getElementById("btnradio2").checked;
+            var r3 = document.getElementById("btnradio3").checked;
+            if(r1 == true){
+                document.getElementById("prio").value = 2;
+            }
+            else if(r2 == true){
+                document.getElementById("prio").value = 1;
+            }
+            else{
+                document.getElementById("prio").value = 0;
+            }
+        }
+    </script>
+
+</form>
