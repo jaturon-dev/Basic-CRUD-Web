@@ -11,7 +11,7 @@ General functionality:
   * CRUD To Do
 
 ## Framework
-![alt text](https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/.NET_Core_Logo.svg/1200px-.NET_Core_Logo.svg.png "Logo .net")
+![alt text](https://img.stackshare.io/service/11331/asp.net-core.png "Logo .net")
 ASP.NET Core MVC (.Net 6)
 
 ## Special Thanks
