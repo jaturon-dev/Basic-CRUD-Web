@@ -1,5 +1,4 @@
-# Basic CRUD Web
-# To Do Web
+# To Do Web (Basic CRUD)
   The web is used to record the things you want to do.
 
 Demo: https://www.todolist.website
