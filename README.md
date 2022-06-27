@@ -12,6 +12,7 @@ General functionality:
 
 ## Framework
 ![alt text](https://img.stackshare.io/service/11331/asp.net-core.png "Logo .net")
+
 ASP.NET Core MVC (.Net 6)
 
 ## Special Thanks
